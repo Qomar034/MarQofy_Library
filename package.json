@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/Qomar034/MarQofy_Library/issues"
   },
-  "homepage": "https://github.com/Qomar034/MarQofy_Library#readme"
+  "homepage": "https://github.com/Qomar034/MarQofy_Library#readme",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "pg": "^8.10.0"
+  }
 }
