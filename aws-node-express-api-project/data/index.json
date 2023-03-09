@@ -1,0 +1,62 @@
+{
+    "authors": [
+        {
+            "id": 1,
+            "fullName": "Mark Twain",
+            "gender": "Male"
+          },
+          {
+            "id": 2,
+            "fullName": "Lewis Carrol",
+            "gender": "Male"
+          },
+          {
+            "id": 3,
+            "fullName": "Jane Austen",
+            "gender": "Female"
+          },
+          {
+            "id": 4,
+            "fullName": "Arthur Conan Doyle",
+            "gender": "Male"
+          },
+          {
+            "id": 5,
+            "fullName": "Shakespeare",
+            "gender": "Male"
+          }
+    ],
+
+    "books": [
+        {
+            "id": 1,
+            "title": "Adventures of Tom Sawyer",
+            "authorId": 1 
+        },
+        {
+            "id": 2,
+            "title": "Alice in Wonderland",
+            "authorId": 2 
+        },
+        {
+            "id": 3,
+            "title": "Pride and Prejudice",
+            "authorId": 3 
+        },
+        {
+            "id": 4,
+            "title": "Adventures of Sherlock Holmes",
+            "authorId": 4
+        },
+        {
+            "id": 5,
+            "title": "The Merchant of Venice",
+            "authorId": 5 
+        },
+        {
+            "id": 6,
+            "title": "Antony and Cleopatra",
+            "authorId": 5
+        }
+    ]
+}
