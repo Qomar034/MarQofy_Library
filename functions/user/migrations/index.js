@@ -2,7 +2,7 @@ const pool = require('./config')
 
 let Password = require('./helpers/bcrypt')
 let usersData = require('./data').map(el => {
-    return `('${el.fullName}', '${el.username}', '${Password.hashPass(el.password)}', '${el.gender}')`
+    return `('${el.fullName}', '${el.username}', '${Password.hashPass(el.password)}', '${el.role}', '${el.gender}')`
 })
 
 let migrateQuery = {
@@ -13,10 +13,11 @@ let migrateQuery = {
         "fullName" VARCHAR(120) NOT NULL, 
         "username" VARCHAR(120) NOT NULL, 
         "password" VARCHAR(120) NOT NULL,
+        "role" VARCHAR(6) NOT NULL,
         "gender" VARCHAR(6) NOT NULL
         );`,
     seedTable: `
-    INSERT INTO "users"("fullName", "username", "password", "gender")
+    INSERT INTO "users"("fullName", "username", "password", "role", "gender")
     VALUES ${usersData}
     ;`
 }
