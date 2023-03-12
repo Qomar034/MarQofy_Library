@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "fullName": "Admin",
+        "username": "Admin",
+        "password": "Admin",
+        "gender": "Male"
+    },
+    {
+        "id": 2,
+        "fullName": "Nur Qomarudin",
+        "username": "MarQofy",
+        "password": "marqofy123",
+        "gender": "Male"
+    },
+    {
+        "id": 3,
+        "fullName": "Dummy 1",
+        "username": "dumdum1",
+        "password": "dummy1",
+        "gender": "Male"
+    }
+]
