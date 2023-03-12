@@ -16,7 +16,7 @@ let migrateQuery = {
         "gender" VARCHAR(6) NOT NULL
         );`,
     seedTable: `
-    INSERT INTO TABLE "users"("fullName", "username", "password", "gender")
+    INSERT INTO "users"("fullName", "username", "password", "gender")
     VALUES ${usersData}
     ;`
 }
@@ -29,7 +29,7 @@ pool.query(migrateQuery.dropTable, (err, res) => {
         if (err) return console.log(err)
         console.log('Succesfully Create Table Users');
 
-        pool.query(migrateQuery.createTable, (err, res) => {
+        pool.query(migrateQuery.seedTable, (err, res) => {
             if (err) return console.log(err);
             console.log('Succesfully Seed Table Users');
         })
